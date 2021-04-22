@@ -1,6 +1,8 @@
-# Psycopg2 basics
+# psycopg2\_basics
 
-Psycopg is a very popular PostgreSQL database adapter for the Python programming language. Its full documentation can be seen **[here](https://pypi.org/project/psycopg2/)**.
+## Psycopg2 basics
+
+Psycopg is a very popular PostgreSQL database adapter for the Python programming language. Its full documentation can be seen [**here**](https://pypi.org/project/psycopg2/).
 
 The function `connect()` creates a new database session and returns a new connection instance.
 
@@ -41,12 +43,12 @@ It's also possible to remove a table.
 curr.execute("DROP TABLE members")
 ```
 
-To make changes persistent in the database, we need to commit (queries are called transactions). Finally, we can close the connection.
+To make changes persistent in the database, we need to commit \(queries are called transactions\). Finally, we can close the connection.
 
 ```python
 conn.commit()
 conn.close()
-``` 
+```
 
 This gives the following full code.
 
@@ -76,7 +78,7 @@ if __name__ == "__main__":
     conn.close()
 ```
 
-## Inserting data
+### Inserting data
 
 Data can be inserted into a table with the following syntax.
 
@@ -88,9 +90,9 @@ curr.execute("""
 """)
 ```
 
-## Delete data
+### Delete data
 
-Data can also be deleted.  
+Data can also be deleted.
 
 ```python
 curr.execute("""DELETE FROM members 
@@ -98,9 +100,9 @@ curr.execute("""DELETE FROM members
 """)
 ```
 
-# Useful functions
+## Useful functions
 
-## get connections
+### get connections
 
 ```python
 def get_connection():
@@ -113,7 +115,7 @@ def get_connection():
     return (conn)
 ```
 
-## Showing table content
+### Showing table content
 
 We must use the `fetchall` function to gather all the result in a list of tuples.
 
@@ -129,7 +131,7 @@ def display_table(table: str):
     conn.close()
 ```
 
-## Create a table
+### Create a table
 
 ```python
 def create_table():
@@ -144,7 +146,7 @@ def create_table():
     conn.close()
 ```
 
-## Drop table
+### Drop table
 
 ```python
 def delete_table(table: str):
@@ -155,7 +157,7 @@ def delete_table(table: str):
     conn.close()
 ```
 
-## Inserting data into a table
+### Inserting data into a table
 
 ```python
 def populate_table():
@@ -172,3 +174,4 @@ def populate_table():
     conn.commit()
     conn.close()
 ```
+
