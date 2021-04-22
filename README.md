@@ -1,3 +1,10 @@
+---
+description: >-
+  All credits and materials belong to -
+  https://github.com/42-AI/bootcamp_data-engineering. This gitbook was put
+  together just to make the material easier to read.
+---
+
 # README
 
 ## The client-server architecture
