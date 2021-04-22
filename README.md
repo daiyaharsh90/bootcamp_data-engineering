@@ -1,14 +1,5 @@
 # README
 
-|  |  |
-| ---: | :--- |
-| Turn-in directory : | ex00 |
-| Files to turn in : | None |
-| Forbidden functions : | None |
-| Remarks : | n/a |
-
-![42 AI Logo](.gitbook/assets/42ai_logo.png)
-
 ## The client-server architecture
 
  Bootcamp Data Engineering
